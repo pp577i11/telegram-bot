@@ -11,8 +11,8 @@ from aiogram.fsm.state import StatesGroup, State
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv("7901843273:AAFnfaz-tgV7g4ZKFca7CDVqInKF1KJI7wM")
-ACCESS_PASSWORD = os.getenv("13041982")  # пароль для доступа
+BOT_TOKEN = os.getenv("7901843273:AAFnfaz-tgV7g4ZKFca7CDVqInKF1KJI7wM")
+BOT_PASSWORD = os.getenv("13041982")  # пароль для доступа
 
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher(storage=MemoryStorage())
